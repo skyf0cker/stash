@@ -8,7 +8,7 @@ http:
       type: response
       require-body: true
     - name: 阿里云盘签到
-      cron: "0 10 0 * * ?"
+      cron: "0 10 * * *"
 
 script-providers:
   阿里云盘签到cookie:
