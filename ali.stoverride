@@ -7,10 +7,12 @@ http:
       name: 阿里云盘签到cookie
       type: response
       require-body: true
+    - name: 阿里云盘签到
+      cron: "0 10 0 * * ?"
 
 script-providers:
   阿里云盘签到cookie:
     url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
     interval: 86400
-
-
+  阿里云盘签到:
+    url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
