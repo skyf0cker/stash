@@ -4,7 +4,6 @@ desc: test
 http:
   mitm:
     - '*.sankuai.com'
-    - '*.meituan.com'
 
   scripts:
     - match: '^.*\.sankuai\.com'
