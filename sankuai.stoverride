@@ -1,0 +1,19 @@
+name: sankuai
+desc: sankuai
+
+http:
+  mitm:
+    - '*.sankuai.com'
+
+  scripts:
+    - match: '^.*\.sankuai\.com'
+      name: test-script
+      type: response
+      require-body: true
+      timeout: 3
+
+script-providers:
+  test-script:
+    url: https://raw.githubusercontent.com/skyf0cker/stash/main/scripts/test.js
+    interval: 86400
+

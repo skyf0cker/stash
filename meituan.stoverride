@@ -1,12 +1,12 @@
-name: test
-desc: test
+name: meituan
+desc: meituan
 
 http:
   mitm:
-    - '*.sankuai.com'
+    - '*.meituan.com'
 
   scripts:
-    - match: '^.*\.sankuai\.com'
+    - match: '^.*\.meituan\.com'
       name: test-script
       type: response
       require-body: true
