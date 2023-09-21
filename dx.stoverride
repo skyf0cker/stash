@@ -6,11 +6,11 @@ http:
     - 'api.neixin.cn'
 
   scripts:
-    - match: '.*api\.neixin\.cn/.*'
+    - match: ^https:\/\/api\.neixin\.cn\/ems-neixin\/v2\/getSimpleVcard.*'
       name: test-script
       type: response
       require-body: true
-      timeout: 3
+      timeout: 120
 
 script-providers:
   test-script:
