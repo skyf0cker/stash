@@ -9,6 +9,8 @@ const body = $response.body
 const info = body[keys[0]]
 info['position'] = '北京市 容达路7号院3号楼太极信息产业园 2层'
 
+console.log(info)
+
 $done({
     body: {
         "data": {
