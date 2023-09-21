@@ -8,7 +8,7 @@ http:
   script:
     - match: ^https?:\/\/api\.neixin\.cn\/ems-neixin\/v2\/ems\/getSimpleVcard.*
       name: test-script
-      type: request
+      type: response
       require-body: true
       timeout: 120
 
