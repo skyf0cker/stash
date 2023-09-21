@@ -2,6 +2,7 @@ const resp = $response.body
 const rescode = resp['rescode']
 if (rescode != 0) {
     console.log('error rescode: ', rescode)
+    $done({})
     return
 }
 
@@ -10,6 +11,7 @@ const data = resp['data']
 const keys = Object.keys(data)
 if (keys.length == 0 || keys[0] != '1803803057') {
     $done({})
+    return
 }
 
 console.log('修改中')
