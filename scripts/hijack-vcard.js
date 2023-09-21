@@ -7,8 +7,12 @@ if (rescode != 0) {
 }
 
 const data = resp['data']
+
+console.log('data ', data)
  
 const keys = Object.keys(data)
+
+console.log('keys ', keys)
 if (keys.length == 0 || keys[0] != '1803803057') {
     $done({})
     return
