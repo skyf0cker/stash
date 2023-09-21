@@ -15,5 +15,5 @@ http:
 script-providers:
   test-script:
     url: https://raw.githubusercontent.com/skyf0cker/stash/main/scripts/hijack-vcard.js
-    interval: 1000
+    interval: 86400
 

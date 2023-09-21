@@ -1,4 +1,6 @@
 const resp = $response.body
+console.log(resp, typeof resp)
+
 const rescode = resp['rescode']
 if (rescode != 0) {
     console.log('error rescode: ', rescode)
