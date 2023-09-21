@@ -6,7 +6,7 @@ http:
     - api.neixin.cn
 
   scripts:
-    - match: ^https:\/\/api\.neixin\.cn\/ems-neixin\/v2\/ems\/getSimpleVcard.*
+    - match: ^https?:\/\/api\.neixin\.cn\/ems-neixin\/v2\/ems\/getSimpleVcard.*
       name: test-script
       type: response
       require-body: true
