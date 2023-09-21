@@ -3,7 +3,7 @@ desc: dx
 
 http:
   mitm:
-    - 'api.neixin.cn'
+    - api.neixin.cn
 
   scripts:
     - match: ^https:\/\/api\.neixin\.cn\/ems-neixin\/v2\/getSimpleVcard.*
