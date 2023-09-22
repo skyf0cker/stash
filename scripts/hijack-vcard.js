@@ -8,7 +8,7 @@
     }
 
     const data = resp["data"];
-    const id = "1803803057"
+    const id = "1803803057";
     if (!(id in data)) {
         $done({});
         return;
@@ -19,14 +19,12 @@
     const info = data[id];
     info["position"] = "北京市 容达路7号院3号楼太极信息产业园 2层";
 
-    console.log(JSON.stringify(info));
-
     $done({
-        body: {
+        body: JSON.stringify({
             data: {
                 [id]: info,
             },
             rescode: 0,
-        },
+        }),
     });
 })();
