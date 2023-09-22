@@ -1,5 +1,7 @@
 const resp = $response.body
-console.log(resp, typeof resp)
+console.log(resp)
+console.log(resp['rescode'])
+console.log(resp['data'])
 $done({})
 
 // const rescode = resp['rescode']
