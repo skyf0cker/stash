@@ -19,12 +19,12 @@
     const info = data[id];
     info["position"] = "北京市 容达路7号院3号楼太极信息产业园 2层";
 
-    console.log(info);
+    console.log(JSON.stringify(info));
 
     $done({
         body: {
             data: {
-                1803803057: info,
+                [id]: info,
             },
             rescode: 0,
         },
