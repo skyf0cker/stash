@@ -1,6 +1,7 @@
 (function () {
     let FORMAT_TIME = "yyyy-MM-dd hh:mm:ss";
     const startTime = $script.startTime;
+    consoel.log(typeof startTime);
     console.log(startTime.format(FORMAT_TIME));
 
     const weekday = startTime.getDay();
