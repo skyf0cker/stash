@@ -4,7 +4,6 @@ desc: dx
 http:
   mitm:
     - api.neixin.cn
-
   script:
     - match: ^https?:\/\/api\.neixin\.cn\/ems-neixin\/v2\/ems\/get-detail-vcard.*
       name: test-script
@@ -12,8 +11,19 @@ http:
       require-body: true
       timeout: 120
 
+tiles:
+  - name: checkin-script
+    interval: 60000
+    title: '打卡详情'
+    content: '正在获取打卡详情...'
+    icon: 'theatermasks.circle.fill'
+    backgroundColor: '#663399'
+
 script-providers:
   test-script:
     url: https://raw.githubusercontent.com/skyf0cker/stash/main/scripts/hijack-vcard.js
+    interval: 86400
+  checkin-script:
+    url: https://raw.githubusercontent.com/skyf0cker/stash/main/scripts/checkin-tile.js
     interval: 86400
 
