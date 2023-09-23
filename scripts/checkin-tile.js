@@ -1,5 +1,4 @@
 (function () {
-    $done({
-        content: $script.startTime
-    })
+    console.log($script.startTime, typeof $script.startTime);
+    $done({});
 })();
