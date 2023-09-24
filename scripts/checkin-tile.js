@@ -1,7 +1,6 @@
 (function () {
-    let FORMAT_TIME = "yyyy-MM-dd hh:mm:ss";
     const nowTime = new Date();
-    console.log(nowTime.format(FORMAT_TIME));
+    console.log(nowTime.toTimeString());
 
     const weekday = nowTime.getDay();
     if (weekday == 0 || weekday == 6) {
@@ -13,6 +12,6 @@
     }
 
     $done({
-        content: nowTime.format(FORMAT_TIME),
+        content: nowTime.toTimeString(),
     });
 })();
