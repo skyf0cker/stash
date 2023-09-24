@@ -1,10 +1,9 @@
 (function () {
     let FORMAT_TIME = "yyyy-MM-dd hh:mm:ss";
-    const startTime = $script.startTime;
-    console.log(Object.keys(startTime));
-    console.log(startTime.format(FORMAT_TIME));
+    const nowTime = new Date();
+    console.log(nowTime.format(FORMAT_TIME));
 
-    const weekday = startTime.getDay();
+    const weekday = nowTime.getDay();
     if (weekday == 0 || weekday == 6) {
         $done({
             content: "周末了，休息一下",
@@ -14,6 +13,6 @@
     }
 
     $done({
-        content: startTime.format(FORMAT_TIME),
+        content: nowTime.format(FORMAT_TIME),
     });
 })();
