@@ -5,14 +5,14 @@ http:
   mitm:
     - api.floatingislandapps.com
   script:
-    - match: ^https?:\/\/api\.floatingislandapps\.com\/.*
-      name: test-script
+    - match: ^https:\/\/api\.floatingislandapps\.com.*
+      name: skip-script
       type: response
       require-body: true
       timeout: 120
 
 script-providers:
-  test-script:
+  skip-script:
     url: https://raw.githubusercontent.com/skyf0cker/stash/main/scripts/floatingisland.js
     interval: 86400
 
